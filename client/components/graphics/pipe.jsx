@@ -13,7 +13,7 @@ class PipeGraphicsComponent {
         context.save();
         // context.translate(x, y);
         context.fillStyle = "blue";
-        context.fillRect(0.5, 0.5, 3, 3);
+        context.fillRect(0, 0, 0.05, 0.45);
         context.restore();
     }
 }
