@@ -9,12 +9,13 @@ class PipeGraphicsComponent {
     }
 
     draw(context) {
-        // let {x, y} = this.entity.components.physics.position;
+        let {x, y} = this.entity.components.physics.position;
         context.save();
-        // context.translate(x, y);
         context.fillStyle = "blue";
-        context.fillRect(0, 0, 0.05, 0.45);
+        context.fillRect(x, y, 0.05, 0.45);
+        context.translate(x, y);
         context.restore();
+        log(x, y);
     }
 }
 
